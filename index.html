@@ -13,7 +13,18 @@
 </head>
 <body>
     <div class="main-container">
-        
+        <p class="hero-headline">GitHub Search</p>
+        <p class="hero-sub-headline">Search for users and repositories on GitHub</p>
+        <form id="search-form">
+            <div class="search-container">
+                <input type="text" name="username" id="username-input" placeholder="Enter username to search" autofocus>
+                <div class="search-options">
+                    <p class="search-user-option option"><i class="fa-solid fa-arrow-turn-up fa-rotate-90"></i>Search for user</p>
+                    <p class="search-repository-option option"><i class="fa-solid fa-arrow-turn-up fa-rotate-90"></i>Search for user repositories</p>
+                </div>
+            </div>
+            <button type="submit" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
     </div>
 </body>
 </html>
