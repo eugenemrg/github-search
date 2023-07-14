@@ -22,6 +22,20 @@ html, body{
     align-items: center;
 }
 
+nav{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 24px;
+    font-size: 1.2em;
+}
+
+nav i{
+    padding: 24px;
+}
+
 p.hero-headline{
     font-size: 5.6em;
     font-weight: bold;
@@ -30,8 +44,7 @@ p.hero-headline{
 }
 
 p.hero-sub-headline{
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 1.6em;
     padding-bottom: 48px;
     color: #6c757d;
 }
@@ -96,7 +109,7 @@ form#search-form div.search-container div.search-options p i{
 
 form#search-form button#search-button{
     background-color: white;
-    margin-right: 16px;
+    margin: 0px 16px;
     border-radius: 8px;
     font-size: 1em;
 
