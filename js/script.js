@@ -26,6 +26,11 @@ document.addEventListener('DOMContentLoaded', e => {
         }
     })
 
+    searchForm.addEventListener('submit', e => {
+        e.preventDefault()
+        fetchUserDetails()
+    })
+
     function fetchUserDetails() {
         fetch(`https://api.github.com/users/${searchInput.value}`)
             .then(res => res.json())
