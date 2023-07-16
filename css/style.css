@@ -116,6 +116,10 @@ form#search-form button#search-button{
     color: #495057;
 }
 
+div.users-container{
+    display: none;
+}
+
 .navigation{
     position: relative;
     width: 100%;
