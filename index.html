@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Github Search</title>
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="main-container">
         <nav>
@@ -23,12 +28,36 @@
             <div class="search-container">
                 <input type="text" name="username" id="username-input" placeholder="Enter username to search" autofocus>
                 <div class="search-options">
-                    <p class="search-user-option option"><i class="fa-solid fa-arrow-turn-up fa-rotate-90"></i>Search for user</p>
-                    <p class="search-repository-option option"><i class="fa-solid fa-arrow-turn-up fa-rotate-90"></i>Search for user repositories</p>
+                    <p class="search-user-option option"><i class="fa-solid fa-arrow-turn-up fa-rotate-90"></i>Search
+                        for user</p>
+                    <p class="search-repository-option option"><i
+                            class="fa-solid fa-arrow-turn-up fa-rotate-90"></i>Search for user repositories</p>
                 </div>
             </div>
             <button type="submit" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
     </div>
+    <div class="users-container">
+        <div class="navigation">
+            <i class="fa-solid fa-bars-staggered"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="users">
+            <!-- <p class="section-title">Results for 'JohnDoe'</p>
+            <div class="user-cards-container">
+                <div class="user-card">
+                    <img src="./135141275.png" alt="" class="user-image">
+                    <div class="user-card-content">
+                        <p class="user-name">JohnDoe</p>
+                        <div class="user-extra">
+                            <p class="user-button">Go to GitHub</p>
+                            <p class="user-button">Show repositories</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
 </body>
+
 </html>
