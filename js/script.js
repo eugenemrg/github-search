@@ -73,6 +73,7 @@ function populateUserDetails(userObject){
     if(userObject.message === 'Not Found'){
         console.log('No user');
         sectionTitle.textContent = 'No user found!'
+        document.querySelector('.users-container').style.display = 'block'
     }else{
         let card = document.createElement('div')
         card.className = 'user-card'
