@@ -30,20 +30,23 @@ document.addEventListener('DOMContentLoaded', e => {
         e.preventDefault()
         fetchUserDetails()
     })
-
-    function fetchUserDetails() {
-        fetch(`https://api.github.com/users/${searchInput.value}`)
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-            })
-    }
-
-    function fetchUserRepoDetails(url) {
-        fetch(url)
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-            })
-    }
 })
+
+function fetchUserDetails() {
+    const searchInput = document.getElementById('username-input')
+
+    fetch(`https://api.github.com/users/${searchInput.value}`)
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            populateUserDetails()
+        })
+}
+
+function fetchUserRepoDetails(url) {
+    fetch(url)
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+        })
+}
