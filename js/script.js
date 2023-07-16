@@ -127,7 +127,7 @@ function populateUserDetails(userObject){
         card.appendChild(cardContent)
 
         cardsContainer.appendChild(card)
-        sectionTitle.textContent = `Results for '${document.getElementById('username-input').value}'`
+        sectionTitle.textContent = `${document.getElementById('username-input').value}'s profile`
         document.querySelector('.users-container').style.display = 'block'
     }
 }
