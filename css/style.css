@@ -182,7 +182,8 @@ div.users div.user-card div.user-card-content div.follow-extra p.follow-detail{
     margin-bottom: 24px;
 }
 
-div.users div.user-card div.user-card-content div.user-extra p.user-button{
+div.users div.user-card div.user-card-content div.user-extra a.user-button{
+  display: block;
   text-align: center;
   padding: 8px 0px;
   border-radius: 4px;
@@ -192,11 +193,11 @@ div.users div.user-card div.user-card-content div.user-extra p.user-button{
   border: 1px solid rgb(194, 194, 194);
 }
 
-div.users div.user-card div.user-card-content div.user-extra p.user-button:first-child{
+div.users div.user-card div.user-card-content div.user-extra a.user-button:first-child{
     margin-bottom: 8px;
 }
 
-div.users div.user-card div.user-card-content div.user-extra p.user-button:hover{
+div.users div.user-card div.user-card-content div.user-extra a.user-button:hover{
     background-color: rgb(47, 47, 47);
     color: white;
     border: 1px solid rgb(47, 47, 47);
