@@ -128,6 +128,7 @@ div.users-container{
     justify-content: space-between;
     padding: 0px 24px;
     font-size: 1.2em;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
 }
 
 .navigation i {
