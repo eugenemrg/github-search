@@ -140,7 +140,10 @@ div.users p.section-title{
     color: #6c757d;
     text-align: center;
     font-size: 2em;
-    font-weight: bold;
+    /* font-weight: bold; */
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #adb5bd;
     color: #212529;
 }
 
