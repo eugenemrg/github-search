@@ -110,6 +110,7 @@ function populateUserDetails(userObject){
         let userGitHubLink = document.createElement('p')
         userGitHubLink.className = 'user-button'
         userGitHubLink.textContent = 'Go to GitHub'
+        userGitHubLink.href = userObject.html_url
 
         let userReposLink = document.createElement('p')
         userReposLink.className = 'user-button'
