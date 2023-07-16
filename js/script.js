@@ -39,7 +39,7 @@ function fetchUserDetails() {
         .then(res => res.json())
         .then(data => {
             console.log(data);
-            populateUserDetails()
+            populateUserDetails(data)
         })
 }
 
@@ -49,4 +49,83 @@ function fetchUserRepoDetails(url) {
         .then(data => {
             console.log(data);
         })
+}
+
+function hideAllContainers() {
+    document.querySelector('.main-container').style.display = 'none'
+    document.querySelector('.users-container').style.display = 'none'
+}
+
+function resetCardsContainer() {
+    document.querySelector('.user-cards-container').textContent = ''
+    document.querySelector('.section-title').textContent = 'Searching for user...'
+}
+
+function populateUserDetails(userObject){
+    // Removes existing container items and changes test to default
+    hideAllContainers()
+    resetCardsContainer()
+
+    let sectionTitle = document.querySelector('.section-title')
+    let cardsContainer = document.querySelector('.user-cards-container')
+    cardsContainer.textContent = ''
+
+    if(userObject.message === 'Not Found'){
+        console.log('No user');
+        sectionTitle.textContent = 'No user found!'
+    }else{
+        let card = document.createElement('div')
+        card.className = 'user-card'
+
+        let cardImage = document.createElement('img')
+        cardImage.className = 'user-image'
+        cardImage.src = userObject.avatar_url
+        cardImage.alt = 'User avatar image'
+
+        let cardContent = document.createElement('div')
+        cardContent.className = 'user-card-content'
+
+        let userName = document.createElement('p')
+        userName.className = 'user-name'
+        userName.textContent = userObject.login
+
+        let followDetails = document.createElement('div')
+        followDetails.className = 'follow-extra'
+
+        let followers = document.createElement('p')
+        followers.className = 'follow-detail'
+        followers.textContent = `${userObject.followers} followers`
+
+        let following = document.createElement('p')
+        following.className = 'follow-detail'
+        following.textContent = `${userObject.following} following`
+
+        followDetails.appendChild(followers)
+        followDetails.appendChild(following)
+
+        let userLinks = document.createElement('div')
+        userLinks.className = 'user-extra'
+
+        let userGitHubLink = document.createElement('p')
+        userGitHubLink.className = 'user-button'
+        userGitHubLink.textContent = 'Go to GitHub'
+
+        let userReposLink = document.createElement('p')
+        userReposLink.className = 'user-button'
+        userReposLink.textContent = 'Show repositories'
+
+        userLinks.appendChild(userGitHubLink)
+        userLinks.appendChild(userReposLink)
+
+        cardContent.appendChild(userName)
+        cardContent.appendChild(followDetails)
+        cardContent.appendChild(userLinks)
+
+        card.appendChild(cardImage)
+        card.appendChild(cardContent)
+
+        cardsContainer.appendChild(card)
+        sectionTitle.textContent = `Results for '${document.getElementById('username-input').value}'`
+        document.querySelector('.users-container').style.display = 'block'
+    }
 }
