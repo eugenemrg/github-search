@@ -135,6 +135,10 @@ div.users p.section-title{
     font-size: 1.8em;
     color: #6c757d;
     text-align: center;
+
+    font-size: 2.4em;
+    font-weight: bold;
+    color: #212529;
 }
 
 div.users div.user-cards-container{
