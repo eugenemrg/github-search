@@ -115,3 +115,89 @@ form#search-form button#search-button{
 
     color: #495057;
 }
+
+.navigation{
+    position: relative;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 24px;
+    font-size: 1.2em;
+}
+
+.navigation i {
+    padding: 24px;
+}
+
+div.users p.section-title{
+    padding: 48px;
+    font-size: 1.8em;
+    color: #6c757d;
+    text-align: center;
+}
+
+div.users div.user-cards-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.users div.user-card{
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    width: 250px;
+}
+
+div.users div.user-card img.user-image{
+    display: inline-block;
+    border-radius: 8px 8px 0px 0px;
+    width: 100%;
+}
+
+div.users div.user-card div.user-card-content{
+    padding: 0px 12px 16px 12px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+div.users div.user-card div.user-card-content p.user-name{
+    font-size: 1em;
+    text-align: center;
+    padding: 16px 0px;
+}
+
+div.users div.user-card div.user-card-content div.follow-extra{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+div.users div.user-card div.user-card-content div.follow-extra p.follow-detail{
+    font-size: 1em;
+    text-align: center;
+    color: #6c757d;
+    flex-grow: 1;
+    margin-bottom: 24px;
+}
+
+div.users div.user-card div.user-card-content div.user-extra p.user-button{
+  text-align: center;
+  padding: 8px 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  color: black;
+  border: 1px solid rgb(194, 194, 194);
+}
+
+div.users div.user-card div.user-card-content div.user-extra p.user-button:first-child{
+    margin-bottom: 8px;
+}
+
+div.users div.user-card div.user-card-content div.user-extra p.user-button:hover{
+    background-color: rgb(47, 47, 47);
+    color: white;
+    border: 1px solid rgb(47, 47, 47);
+}
